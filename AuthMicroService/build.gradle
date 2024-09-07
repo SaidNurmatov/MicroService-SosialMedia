@@ -2,3 +2,14 @@
 buradaki bagimliklar ana catidaki build.gradle den gonderdigimiz icin,
  extra bagimilik eklemeye gerek yok taki gerek duydugumuz zamandek
  */
+
+
+
+dependencies {
+    implementation libs.springBootDataJpa
+    implementation libs.postgreSQL
+    implementation libs.lombok
+    annotationProcessor libs.lombok
+//    implementation libs.springCloudStarterOpenFeign
+//    implementation libs.springCloudConfigClient
+}

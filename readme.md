@@ -7,14 +7,14 @@
     password: root
     DB: AuthDB
 ```bash
-docker run -d --name postgresql -p 5432:5432 devsaid34/postgresql:v.0.1
+docker run -d --name postgresql -p 5432:5432 saidnurmatov/postgresql:v.0.1
 ```
     MongoDB
     userName: admin
     password: root
     DB: UserProfileDB
 ```bash
-docker run -d --name mongodb -p 27017:27017 devsaid34/mongodb:v.0.3
+docker run -d --name mongodb -p 27017:27017 saidnurmatov/mongodb:v.0.3
 ```
 
     mongod: 
