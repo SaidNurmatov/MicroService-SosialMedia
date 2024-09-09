@@ -4,3 +4,10 @@ buradaki bagimliklar ana catidaki build.gradle den gonderdigimiz icin,
  */
 
 
+dependencies {
+    implementation libs.springBootDataMongo
+    implementation libs.lombok
+    annotationProcessor libs.lombok
+    implementation libs.springCloudConfigClient
+    implementation libs.springBootDataRedis
+}

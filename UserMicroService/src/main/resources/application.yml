@@ -1,2 +1,9 @@
-server:
-  port: 8081
+spring:
+  cloud:
+    config:
+      uri: http://service-loadbalancer-config:8082  # ConfigServer portu (look yml file)
+
+  config:
+    import: "configserver:"
+  application:
+    name: user-application  # path data yml UserMicroService

@@ -1,19 +1,9 @@
-server:
-  port: 8080
-
 spring:
-  datasource:
-    username: db_user
-    password: db_password
-    url: jdbc:postgresql://localhost:5432/AuthDB
-  jpa:
-    hibernate:
-      ddl-auto: update
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
-          format_sql: true
-    show-sql: true
-    mvc:
-      pathmatch:
-        matching-strategy: ANT_PATH_MATCHER
+  cloud:
+    config:
+      uri: http://service-loadbalancer-config:8082  # ConfigServer portu (look yml file)
+
+  config:
+    import: "configserver:"
+  application:
+    name: aut-application  # path data yml AuthMicroservice

@@ -62,7 +62,9 @@ docker build -t configserver:v01 .
 ````
     2- docker hub üzerinde yayınlanacak ise
 ````bash
-docker build -t devsaid34/configserver:v01 .
+docker build -t saidnurmatov/configserver:v01 .
+docker build -t saidnurmatov/authserver:v02 .
+docker build -t saidnurmatov/userprofileserver:v02 .
 ````
     3- Eğer M chip bir macOS var ise 
 ````bash
